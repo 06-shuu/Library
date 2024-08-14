@@ -48,6 +48,35 @@ h6 {
   isolation: isolate;
 }
 
-h1 {
-  color: red;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  background-color: #fffcf5;
+  padding: 30px;
+}
+
+.header {
+  padding-bottom: 30px;
+}
+
+.showBooks {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(150px, 1fr));
+  gap: 20px;
+}
+.showBooks .book-card {
+  padding: 10px;
+  height: 10rem;
+  border: 1px solid black;
 }/*# sourceMappingURL=main.css.map */
