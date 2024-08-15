@@ -1,0 +1,14 @@
+$bg-colors: (
+    #a8a29e,
+    #f0abfc, 
+    #fef08a,
+    #86efac,
+    #d8b4fe,
+    #93c5fd,
+    #2dd4bf   
+);
+
+@function get-bg-clr($index) {
+    $shade-count: length($bg-colors);
+    @return nth($bg-colors, ($index % $shade-count) + 1);
+}

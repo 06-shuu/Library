@@ -1,4 +1,4 @@
-@import 'reset';
+@import 'reset', 'config';
 
 * {
     box-sizing: border-box;
@@ -21,16 +21,142 @@ body {
 
 .header {
     padding-bottom: 30px;
+
+    dialog {
+        width: 100%;
+        max-width: 500px;
+        padding: 20px;
+        border: none;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1000;
+
+        form {
+
+            .input,
+            .multipleSelection {
+                display: flex;
+                gap: 10px;
+                padding: 5px;
+                font-weight: bold;
+            }
+
+            .btns {
+                display: grid;
+                grid-template-columns: auto auto;
+                justify-content: center;
+                gap: 10px;
+                padding-top: 5px;
+
+                button {
+                    padding: 0 6px;
+                    background-color: #fff;
+                    border: solid 1px black;
+                    transition: transform 0.2s ease-in-out, padding 0.2s ease-in-out;
+
+                    &:hover {
+                        transform: scale(1.1);
+                        background-color: #fffcf5;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+
+    .btnDiv {
+        display: flex;
+        gap: 5px;
+        padding-bottom: 15px;
+
+        button {
+            // padding: 0 8px;
+            cursor: pointer;
+            border: none;
+            background-color: #fffcf5;
+            font-weight: bolder;
+            font-size: 20px;
+            transition: transform 0.2s ease-in-out, padding 0.2s ease-in-out;
+
+            &:active,
+            &:hover {
+                transform: scale(1.1);
+                color: blue;
+            }
+        }
+    }
 }
 
-.showBooks{
+.showBooks {
     display: grid;
-    grid-template-columns: repeat(5, minmax(150px, 1fr));
+    grid-template-columns: repeat(5, minmax(max-content, 1fr));
     gap: 20px;
 
-    .book-card{
-        padding: 10px;
-        height: 10rem;
+    .book-card {
+        // padding: 10px;
+        height: 12rem;
         border: 1px solid black;
+
+        .title{
+            display: grid;
+            place-items: center;
+            padding: 5px 0;
+            font-weight: bold;
+        }
+
+
+        p{
+            padding: 0 10px;
+        }
+
+        .ebtns {
+            padding: 0 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+            gap: 10px;
+
+            .deleteBtn,
+            .editBtn {
+                border: none;
+                background-color: #fff;
+            }
+
+            .deleteBtn {
+                transition: transform 0.2s ease-in-out, padding 0.2s ease-in-out;
+
+                &:active,
+                &:hover {
+                    transform: scale(1.1);
+                    color: red;
+                }
+            }
+
+            .editBtn {
+                transition: transform 0.2s ease-in-out, padding 0.2s ease-in-out;
+
+                &:active,
+                &:hover {
+                    transform: scale(1.1);
+                    color: green;
+                }
+            }
+
+        }
+
+    }
+
+    @for $i from 1 through 10 { 
+        .book-card:nth-of-type(#{$i}) {
+            .title {
+                background-color: get-bg-clr($i);
+            }
+        }
     }
 }

@@ -69,14 +69,134 @@ body {
 .header {
   padding-bottom: 30px;
 }
+.header dialog {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  border: none;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+.header dialog form .input,
+.header dialog form .multipleSelection {
+  display: flex;
+  gap: 10px;
+  padding: 5px;
+  font-weight: bold;
+}
+.header dialog form .btns {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 5px;
+}
+.header dialog form .btns button {
+  padding: 0 6px;
+  background-color: #fff;
+  border: solid 1px black;
+  transition: transform 0.2s ease-in-out, padding 0.2s ease-in-out;
+}
+.header dialog form .btns button:hover {
+  transform: scale(1.1);
+  background-color: #fffcf5;
+  font-weight: bold;
+}
+.header .btnDiv {
+  display: flex;
+  gap: 5px;
+  padding-bottom: 15px;
+}
+.header .btnDiv button {
+  cursor: pointer;
+  border: none;
+  background-color: #fffcf5;
+  font-weight: bolder;
+  font-size: 20px;
+  transition: transform 0.2s ease-in-out, padding 0.2s ease-in-out;
+}
+.header .btnDiv button:active, .header .btnDiv button:hover {
+  transform: scale(1.1);
+  color: blue;
+}
 
 .showBooks {
   display: grid;
-  grid-template-columns: repeat(5, minmax(150px, 1fr));
+  grid-template-columns: repeat(5, minmax(max-content, 1fr));
   gap: 20px;
 }
 .showBooks .book-card {
-  padding: 10px;
-  height: 10rem;
+  height: 12rem;
   border: 1px solid black;
+}
+.showBooks .book-card .title {
+  display: grid;
+  place-items: center;
+  padding: 5px 0;
+  font-weight: bold;
+}
+.showBooks .book-card p {
+  padding: 0 10px;
+}
+.showBooks .book-card .ebtns {
+  padding: 0 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  gap: 10px;
+}
+.showBooks .book-card .ebtns .deleteBtn,
+.showBooks .book-card .ebtns .editBtn {
+  border: none;
+  background-color: #fff;
+}
+.showBooks .book-card .ebtns .deleteBtn {
+  transition: transform 0.2s ease-in-out, padding 0.2s ease-in-out;
+}
+.showBooks .book-card .ebtns .deleteBtn:active, .showBooks .book-card .ebtns .deleteBtn:hover {
+  transform: scale(1.1);
+  color: red;
+}
+.showBooks .book-card .ebtns .editBtn {
+  transition: transform 0.2s ease-in-out, padding 0.2s ease-in-out;
+}
+.showBooks .book-card .ebtns .editBtn:active, .showBooks .book-card .ebtns .editBtn:hover {
+  transform: scale(1.1);
+  color: green;
+}
+.showBooks .book-card:nth-of-type(1) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(2) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(3) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(4) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(5) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(6) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(7) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(8) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(9) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(10) .title {
+  background-color: #86efac;
 }/*# sourceMappingURL=main.css.map */
