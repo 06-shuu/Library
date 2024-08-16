@@ -152,7 +152,7 @@ body {
 
     }
 
-    @for $i from 1 through 1000 {
+    @for $i from 1 through 100 {
         .book-card:nth-of-type(#{$i}) {
             .title {
                 background-color: get-bg-clr($i);
