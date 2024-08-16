@@ -7,7 +7,7 @@
 - https://06-shuu.github.io/Library
 
 **Used technologies:**
-- HTML and SCSS
+- HTML, Vanilla JS and SCSS
 
 ~ FOR DESKTOP VIEW ONLY ~
 
