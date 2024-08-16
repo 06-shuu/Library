@@ -63,11 +63,10 @@ html {
 body {
   font-family: "Courier New", Courier, monospace;
   background-color: #fffcf5;
-  padding: 30px;
 }
 
 .header {
-  padding-bottom: 30px;
+  padding: 30px;
 }
 .header dialog {
   width: 100%;
@@ -127,9 +126,10 @@ body {
 }
 
 .showBooks {
+  padding: 30px;
   display: grid;
-  grid-template-columns: repeat(5, minmax(max-content, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(5, minmax(1rem, 1fr));
+  gap: 1rem;
 }
 .showBooks .book-card {
   height: 12rem;
@@ -144,31 +144,21 @@ body {
 .showBooks .book-card p {
   padding: 0 10px;
 }
-.showBooks .book-card .ebtns {
+.showBooks .book-card .ebtn {
   padding: 0 10px;
   display: flex;
   flex-direction: row;
   justify-content: end;
   gap: 10px;
 }
-.showBooks .book-card .ebtns .deleteBtn,
-.showBooks .book-card .ebtns .editBtn {
+.showBooks .book-card .ebtn .deleteBtn {
   border: none;
   background-color: #fff;
-}
-.showBooks .book-card .ebtns .deleteBtn {
   transition: transform 0.2s ease-in-out, padding 0.2s ease-in-out;
 }
-.showBooks .book-card .ebtns .deleteBtn:active, .showBooks .book-card .ebtns .deleteBtn:hover {
+.showBooks .book-card .ebtn .deleteBtn:active, .showBooks .book-card .ebtn .deleteBtn:hover {
   transform: scale(1.1);
   color: red;
-}
-.showBooks .book-card .ebtns .editBtn {
-  transition: transform 0.2s ease-in-out, padding 0.2s ease-in-out;
-}
-.showBooks .book-card .ebtns .editBtn:active, .showBooks .book-card .ebtns .editBtn:hover {
-  transform: scale(1.1);
-  color: green;
 }
 .showBooks .book-card:nth-of-type(1) .title {
   background-color: #f0abfc;
@@ -199,4 +189,2983 @@ body {
 }
 .showBooks .book-card:nth-of-type(10) .title {
   background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(11) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(12) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(13) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(14) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(15) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(16) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(17) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(18) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(19) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(20) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(21) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(22) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(23) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(24) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(25) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(26) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(27) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(28) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(29) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(30) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(31) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(32) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(33) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(34) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(35) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(36) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(37) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(38) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(39) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(40) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(41) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(42) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(43) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(44) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(45) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(46) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(47) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(48) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(49) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(50) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(51) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(52) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(53) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(54) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(55) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(56) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(57) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(58) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(59) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(60) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(61) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(62) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(63) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(64) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(65) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(66) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(67) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(68) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(69) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(70) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(71) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(72) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(73) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(74) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(75) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(76) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(77) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(78) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(79) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(80) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(81) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(82) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(83) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(84) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(85) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(86) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(87) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(88) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(89) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(90) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(91) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(92) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(93) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(94) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(95) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(96) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(97) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(98) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(99) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(100) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(101) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(102) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(103) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(104) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(105) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(106) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(107) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(108) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(109) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(110) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(111) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(112) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(113) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(114) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(115) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(116) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(117) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(118) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(119) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(120) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(121) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(122) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(123) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(124) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(125) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(126) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(127) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(128) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(129) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(130) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(131) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(132) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(133) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(134) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(135) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(136) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(137) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(138) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(139) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(140) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(141) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(142) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(143) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(144) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(145) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(146) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(147) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(148) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(149) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(150) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(151) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(152) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(153) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(154) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(155) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(156) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(157) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(158) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(159) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(160) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(161) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(162) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(163) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(164) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(165) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(166) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(167) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(168) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(169) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(170) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(171) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(172) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(173) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(174) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(175) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(176) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(177) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(178) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(179) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(180) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(181) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(182) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(183) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(184) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(185) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(186) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(187) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(188) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(189) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(190) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(191) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(192) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(193) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(194) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(195) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(196) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(197) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(198) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(199) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(200) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(201) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(202) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(203) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(204) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(205) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(206) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(207) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(208) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(209) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(210) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(211) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(212) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(213) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(214) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(215) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(216) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(217) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(218) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(219) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(220) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(221) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(222) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(223) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(224) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(225) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(226) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(227) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(228) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(229) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(230) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(231) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(232) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(233) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(234) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(235) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(236) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(237) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(238) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(239) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(240) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(241) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(242) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(243) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(244) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(245) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(246) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(247) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(248) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(249) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(250) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(251) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(252) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(253) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(254) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(255) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(256) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(257) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(258) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(259) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(260) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(261) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(262) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(263) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(264) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(265) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(266) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(267) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(268) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(269) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(270) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(271) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(272) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(273) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(274) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(275) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(276) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(277) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(278) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(279) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(280) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(281) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(282) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(283) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(284) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(285) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(286) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(287) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(288) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(289) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(290) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(291) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(292) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(293) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(294) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(295) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(296) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(297) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(298) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(299) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(300) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(301) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(302) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(303) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(304) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(305) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(306) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(307) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(308) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(309) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(310) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(311) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(312) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(313) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(314) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(315) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(316) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(317) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(318) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(319) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(320) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(321) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(322) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(323) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(324) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(325) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(326) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(327) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(328) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(329) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(330) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(331) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(332) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(333) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(334) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(335) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(336) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(337) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(338) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(339) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(340) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(341) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(342) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(343) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(344) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(345) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(346) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(347) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(348) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(349) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(350) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(351) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(352) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(353) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(354) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(355) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(356) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(357) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(358) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(359) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(360) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(361) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(362) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(363) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(364) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(365) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(366) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(367) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(368) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(369) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(370) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(371) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(372) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(373) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(374) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(375) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(376) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(377) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(378) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(379) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(380) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(381) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(382) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(383) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(384) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(385) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(386) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(387) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(388) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(389) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(390) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(391) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(392) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(393) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(394) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(395) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(396) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(397) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(398) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(399) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(400) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(401) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(402) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(403) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(404) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(405) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(406) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(407) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(408) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(409) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(410) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(411) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(412) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(413) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(414) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(415) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(416) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(417) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(418) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(419) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(420) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(421) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(422) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(423) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(424) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(425) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(426) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(427) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(428) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(429) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(430) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(431) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(432) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(433) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(434) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(435) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(436) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(437) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(438) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(439) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(440) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(441) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(442) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(443) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(444) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(445) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(446) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(447) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(448) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(449) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(450) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(451) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(452) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(453) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(454) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(455) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(456) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(457) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(458) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(459) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(460) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(461) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(462) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(463) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(464) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(465) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(466) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(467) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(468) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(469) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(470) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(471) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(472) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(473) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(474) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(475) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(476) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(477) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(478) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(479) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(480) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(481) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(482) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(483) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(484) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(485) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(486) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(487) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(488) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(489) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(490) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(491) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(492) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(493) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(494) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(495) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(496) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(497) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(498) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(499) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(500) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(501) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(502) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(503) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(504) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(505) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(506) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(507) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(508) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(509) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(510) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(511) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(512) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(513) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(514) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(515) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(516) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(517) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(518) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(519) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(520) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(521) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(522) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(523) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(524) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(525) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(526) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(527) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(528) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(529) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(530) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(531) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(532) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(533) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(534) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(535) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(536) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(537) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(538) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(539) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(540) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(541) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(542) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(543) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(544) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(545) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(546) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(547) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(548) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(549) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(550) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(551) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(552) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(553) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(554) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(555) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(556) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(557) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(558) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(559) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(560) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(561) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(562) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(563) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(564) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(565) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(566) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(567) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(568) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(569) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(570) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(571) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(572) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(573) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(574) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(575) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(576) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(577) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(578) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(579) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(580) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(581) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(582) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(583) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(584) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(585) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(586) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(587) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(588) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(589) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(590) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(591) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(592) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(593) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(594) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(595) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(596) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(597) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(598) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(599) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(600) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(601) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(602) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(603) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(604) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(605) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(606) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(607) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(608) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(609) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(610) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(611) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(612) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(613) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(614) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(615) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(616) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(617) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(618) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(619) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(620) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(621) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(622) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(623) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(624) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(625) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(626) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(627) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(628) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(629) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(630) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(631) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(632) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(633) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(634) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(635) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(636) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(637) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(638) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(639) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(640) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(641) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(642) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(643) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(644) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(645) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(646) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(647) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(648) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(649) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(650) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(651) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(652) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(653) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(654) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(655) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(656) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(657) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(658) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(659) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(660) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(661) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(662) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(663) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(664) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(665) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(666) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(667) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(668) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(669) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(670) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(671) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(672) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(673) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(674) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(675) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(676) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(677) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(678) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(679) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(680) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(681) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(682) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(683) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(684) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(685) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(686) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(687) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(688) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(689) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(690) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(691) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(692) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(693) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(694) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(695) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(696) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(697) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(698) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(699) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(700) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(701) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(702) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(703) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(704) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(705) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(706) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(707) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(708) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(709) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(710) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(711) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(712) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(713) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(714) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(715) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(716) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(717) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(718) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(719) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(720) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(721) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(722) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(723) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(724) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(725) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(726) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(727) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(728) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(729) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(730) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(731) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(732) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(733) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(734) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(735) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(736) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(737) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(738) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(739) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(740) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(741) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(742) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(743) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(744) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(745) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(746) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(747) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(748) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(749) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(750) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(751) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(752) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(753) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(754) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(755) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(756) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(757) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(758) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(759) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(760) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(761) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(762) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(763) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(764) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(765) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(766) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(767) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(768) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(769) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(770) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(771) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(772) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(773) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(774) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(775) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(776) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(777) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(778) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(779) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(780) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(781) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(782) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(783) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(784) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(785) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(786) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(787) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(788) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(789) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(790) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(791) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(792) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(793) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(794) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(795) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(796) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(797) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(798) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(799) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(800) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(801) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(802) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(803) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(804) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(805) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(806) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(807) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(808) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(809) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(810) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(811) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(812) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(813) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(814) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(815) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(816) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(817) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(818) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(819) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(820) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(821) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(822) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(823) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(824) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(825) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(826) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(827) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(828) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(829) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(830) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(831) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(832) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(833) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(834) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(835) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(836) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(837) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(838) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(839) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(840) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(841) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(842) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(843) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(844) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(845) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(846) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(847) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(848) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(849) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(850) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(851) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(852) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(853) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(854) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(855) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(856) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(857) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(858) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(859) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(860) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(861) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(862) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(863) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(864) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(865) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(866) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(867) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(868) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(869) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(870) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(871) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(872) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(873) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(874) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(875) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(876) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(877) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(878) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(879) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(880) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(881) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(882) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(883) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(884) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(885) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(886) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(887) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(888) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(889) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(890) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(891) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(892) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(893) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(894) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(895) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(896) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(897) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(898) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(899) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(900) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(901) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(902) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(903) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(904) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(905) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(906) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(907) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(908) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(909) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(910) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(911) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(912) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(913) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(914) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(915) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(916) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(917) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(918) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(919) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(920) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(921) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(922) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(923) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(924) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(925) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(926) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(927) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(928) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(929) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(930) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(931) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(932) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(933) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(934) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(935) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(936) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(937) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(938) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(939) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(940) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(941) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(942) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(943) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(944) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(945) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(946) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(947) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(948) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(949) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(950) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(951) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(952) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(953) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(954) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(955) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(956) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(957) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(958) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(959) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(960) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(961) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(962) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(963) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(964) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(965) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(966) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(967) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(968) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(969) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(970) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(971) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(972) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(973) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(974) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(975) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(976) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(977) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(978) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(979) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(980) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(981) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(982) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(983) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(984) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(985) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(986) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(987) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(988) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(989) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(990) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(991) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(992) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(993) .title {
+  background-color: #2dd4bf;
+}
+.showBooks .book-card:nth-of-type(994) .title {
+  background-color: #a8a29e;
+}
+.showBooks .book-card:nth-of-type(995) .title {
+  background-color: #f0abfc;
+}
+.showBooks .book-card:nth-of-type(996) .title {
+  background-color: #fef08a;
+}
+.showBooks .book-card:nth-of-type(997) .title {
+  background-color: #86efac;
+}
+.showBooks .book-card:nth-of-type(998) .title {
+  background-color: #d8b4fe;
+}
+.showBooks .book-card:nth-of-type(999) .title {
+  background-color: #93c5fd;
+}
+.showBooks .book-card:nth-of-type(1000) .title {
+  background-color: #2dd4bf;
+}
+
+footer {
+  padding: 0 30px;
+  position: fixed;
+  bottom: 0;
+  background-color: #fffcf5;
+  width: 100%;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */

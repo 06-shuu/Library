@@ -15,12 +15,11 @@ html {
 body {
     font-family: 'Courier New', Courier, monospace;
     background-color: #fffcf5;
-    padding: 30px;
 }
 
 
 .header {
-    padding-bottom: 30px;
+    padding: 30px;
 
     dialog {
         width: 100%;
@@ -94,15 +93,17 @@ body {
 }
 
 .showBooks {
+    padding: 30px;
     display: grid;
-    grid-template-columns: repeat(5, minmax(max-content, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(5, minmax(1rem, 1fr));
+    gap: 1rem;
 
     .book-card {
         // padding: 10px;
         height: 12rem;
         border: 1px solid black;
-        .title{
+
+        .title {
             display: grid;
             place-items: center;
             padding: 5px 0;
@@ -110,24 +111,20 @@ body {
         }
 
 
-        p{
+        p {
             padding: 0 10px;
         }
 
-        .ebtns {
+        .ebtn {
             padding: 0 10px;
             display: flex;
             flex-direction: row;
             justify-content: end;
             gap: 10px;
 
-            .deleteBtn,
-            .editBtn {
+            .deleteBtn {
                 border: none;
                 background-color: #fff;
-            }
-
-            .deleteBtn {
                 transition: transform 0.2s ease-in-out, padding 0.2s ease-in-out;
 
                 &:active,
@@ -136,26 +133,24 @@ body {
                     color: red;
                 }
             }
-
-            .editBtn {
-                transition: transform 0.2s ease-in-out, padding 0.2s ease-in-out;
-
-                &:active,
-                &:hover {
-                    transform: scale(1.1);
-                    color: green;
-                }
-            }
-
         }
 
     }
 
-    @for $i from 1 through 10 { 
+    @for $i from 1 through 1000 {
         .book-card:nth-of-type(#{$i}) {
             .title {
                 background-color: get-bg-clr($i);
             }
         }
     }
+}
+
+footer{
+    padding: 0 30px;
+    position: fixed;
+    bottom: 0;
+    background-color: #fffcf5;
+    width: 100%;
+    text-align: center;    
 }

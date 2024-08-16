@@ -12,6 +12,7 @@ let book1 = new Book('Kafka on the shore', 'Haruki Murakami', 480, 'yes', 'excel
 let book2 = new Book('Emily the Strange', 'Jessica Gruner', 264, 'no', 'good');
 let book3 = new Book('Siyar Al-muluk', 'Nizam Al-mulk', 325, 'no', 'good');
 
+
 function addBookToLibrary(book) {
     myLibrary.push(book);
 }
@@ -43,6 +44,10 @@ Book.prototype.display = function () {
     `;
 };
 
+Book.prototype.toggleReadBtn = function () {
+    return ``;
+};
+
 function displayBooks() {
     const showBooks = document.querySelector(".showBooks");
     showBooks.innerHTML = '';
@@ -52,9 +57,8 @@ function displayBooks() {
         bookDiv.classList.add('book-card');
         bookDiv.innerHTML = `
             ${book.display()} 
-            <div class="ebtns">
+            <div class="ebtn">
                 <button class="deleteBtn" data-index="${index}"><i class="fa-solid fa-trash-can"></i></button>
-                <button class="editBtn" data-index="${index}"><i class="fa-solid fa-pen-to-square"></i></button>
             </div>
             `;
         showBooks.appendChild(bookDiv);
@@ -68,13 +72,6 @@ function displayBooks() {
         });
     });
 
-    const editButtons = document.querySelectorAll('.editBtn');
-    editButtons.forEach(button => {
-        button.addEventListener('click', (e) => {
-            const bookIndex = e.currentTarget.getAttribute('data-index');
-            //update code here
-        });
-    });
 }
 
 function removeBookFromLibrary(index) {
