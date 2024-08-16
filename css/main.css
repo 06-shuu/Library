@@ -66,7 +66,7 @@ body {
 }
 
 .header {
-  padding: 30px;
+  padding: 30px 30px 10px 30px;
 }
 .header dialog {
   width: 100%;
@@ -126,7 +126,7 @@ body {
 }
 
 .showBooks {
-  padding: 30px;
+  padding: 10px 30px 30px 30px;
   display: grid;
   grid-template-columns: repeat(5, minmax(1rem, 1fr));
   gap: 1rem;
@@ -141,24 +141,32 @@ body {
   padding: 5px 0;
   font-weight: bold;
 }
+.showBooks .book-card .info {
+  font-weight: bold;
+}
 .showBooks .book-card p {
   padding: 0 10px;
 }
-.showBooks .book-card .ebtn {
+.showBooks .book-card .ebtns {
   padding: 0 10px;
   display: flex;
   flex-direction: row;
   justify-content: end;
   gap: 10px;
 }
-.showBooks .book-card .ebtn .deleteBtn {
+.showBooks .book-card .ebtns .deleteBtn,
+.showBooks .book-card .ebtns .readBtn {
   border: none;
-  background-color: #fff;
+  background-color: #fffcf5;
   transition: transform 0.2s ease-in-out, padding 0.2s ease-in-out;
 }
-.showBooks .book-card .ebtn .deleteBtn:active, .showBooks .book-card .ebtn .deleteBtn:hover {
+.showBooks .book-card .ebtns .deleteBtn:active, .showBooks .book-card .ebtns .deleteBtn:hover {
   transform: scale(1.1);
   color: red;
+}
+.showBooks .book-card .ebtns .readBtn:active, .showBooks .book-card .ebtns .readBtn:hover {
+  transform: scale(1.1);
+  color: green;
 }
 .showBooks .book-card:nth-of-type(1) .title {
   background-color: #f0abfc;

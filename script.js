@@ -1,10 +1,10 @@
 const myLibrary = [];
 
-function Book(title, author, pages, isRead, rate) {
+function Book(title, author, pages, readStatus, rate) {
     this.title = title;
     this.author = author;
     this.pages = pages;
-    this.isRead = isRead;
+    this.readStatus = readStatus;
     this.rate = rate;
 }
 
@@ -37,16 +37,17 @@ function getStarRating(rate) {
 Book.prototype.display = function () {
     return `
     <p class="title">${this.title}</p>
-    <p>Author: ${this.author}</p>
-    <p>Pages: ${this.pages}</p>
-    <p>Read: ${this.isRead}</p>
-    <p>Rate: ${getStarRating(this.rate)}</p>
+    <p> <span class="info">Author: </span> ${this.author}</p>
+    <p> <span class="info">Pages: </span>${this.pages}</p>
+    <p> <span class="info">Read: </span>${this.readStatus}</p>
+    <p> <span class="info">Rate:</span>${getStarRating(this.rate)}</p>
     `;
 };
 
 Book.prototype.toggleReadBtn = function () {
-    return ``;
+    this.readStatus = this.readStatus === 'yes' ? 'no' : 'yes';
 };
+
 
 function displayBooks() {
     const showBooks = document.querySelector(".showBooks");
@@ -57,8 +58,9 @@ function displayBooks() {
         bookDiv.classList.add('book-card');
         bookDiv.innerHTML = `
             ${book.display()} 
-            <div class="ebtn">
+            <div class="ebtns">
                 <button class="deleteBtn" data-index="${index}"><i class="fa-solid fa-trash-can"></i></button>
+                <button class="readBtn" data-index="${index}"><i class="fa-brands fa-readme"></i></button>
             </div>
             `;
         showBooks.appendChild(bookDiv);
@@ -69,6 +71,15 @@ function displayBooks() {
         button.addEventListener('click', (e) => {
             const bookIndex = e.currentTarget.getAttribute('data-index');
             removeBookFromLibrary(bookIndex);
+        });
+    });
+
+    const readButtons = document.querySelectorAll('.readBtn');
+    readButtons.forEach(button => {
+        button.addEventListener('click', (e) => {
+            const bookIndex = e.currentTarget.getAttribute('data-index');
+            myLibrary[bookIndex].toggleReadBtn();
+            displayBooks(); 
         });
     });
 
@@ -92,7 +103,7 @@ confirmBtn.addEventListener("click", (e) => {
     const bookTitle = document.querySelector('#title').value;
     const bookAuthor = document.querySelector('#author').value;
     const bookPages = document.querySelector('#pages').value;
-    const bookRead = document.querySelector('#isRead').value;
+    const bookRead = document.querySelector('#readStatus').value;
     const bookRate = document.querySelector('#rate').value;
 
     let newBook = new Book(bookTitle, bookAuthor, bookPages, bookRead, bookRate);
@@ -101,7 +112,7 @@ confirmBtn.addEventListener("click", (e) => {
     document.querySelector('#title').value = '';
     document.querySelector('#author').value = '';
     document.querySelector('#pages').value = '';
-    document.querySelector('#isRead').value = '';
+    document.querySelector('#readStatus').value = '';
     document.querySelector('#rate').value = '';
 
     addBookDialog.close();

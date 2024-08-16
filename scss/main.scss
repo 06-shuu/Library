@@ -19,7 +19,7 @@ body {
 
 
 .header {
-    padding: 30px;
+    padding: 30px 30px 10px 30px;
 
     dialog {
         width: 100%;
@@ -93,7 +93,7 @@ body {
 }
 
 .showBooks {
-    padding: 30px;
+    padding: 10px 30px 30px 30px;
     display: grid;
     grid-template-columns: repeat(5, minmax(1rem, 1fr));
     gap: 1rem;
@@ -110,27 +110,42 @@ body {
             font-weight: bold;
         }
 
+        .info{
+            font-weight: bold;
+        }
+
 
         p {
             padding: 0 10px;
         }
 
-        .ebtn {
+        .ebtns {
             padding: 0 10px;
             display: flex;
             flex-direction: row;
             justify-content: end;
             gap: 10px;
 
-            .deleteBtn {
+            .deleteBtn,
+            .readBtn {
                 border: none;
-                background-color: #fff;
+                background-color: #fffcf5;
                 transition: transform 0.2s ease-in-out, padding 0.2s ease-in-out;
+            }
 
+            .deleteBtn{
                 &:active,
                 &:hover {
                     transform: scale(1.1);
                     color: red;
+                }
+            }
+
+            .readBtn{
+                &:active,
+                &:hover {
+                    transform: scale(1.1);
+                    color: green;
                 }
             }
         }
