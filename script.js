@@ -12,7 +12,6 @@ let book1 = new Book('Kafka on the shore', 'Haruki Murakami', 480, 'yes', 'excel
 let book2 = new Book('Emily the Strange', 'Jessica Gruner', 264, 'no', 'good');
 let book3 = new Book('Siyar Al-muluk', 'Nizam Al-mulk', 325, 'no', 'good');
 
-
 function addBookToLibrary(book) {
     myLibrary.push(book);
 }
@@ -48,7 +47,6 @@ Book.prototype.toggleReadBtn = function () {
     this.readStatus = this.readStatus === 'yes' ? 'no' : 'yes';
 };
 
-
 function displayBooks() {
     const showBooks = document.querySelector(".showBooks");
     showBooks.innerHTML = '';
@@ -82,7 +80,7 @@ function displayBooks() {
             displayBooks(); 
         });
     });
-
+    console.log(myLibrary)
 }
 
 function removeBookFromLibrary(index) {
@@ -92,13 +90,13 @@ function removeBookFromLibrary(index) {
 
 const showButton = document.querySelector(".showDialog");
 const addBookDialog = document.querySelector(".addBookDialog");
-const confirmBtn = addBookDialog.querySelector("#confirmBtn");
 
 showButton.addEventListener("click", () => {
     addBookDialog.showModal();
 });
 
-confirmBtn.addEventListener("click", (e) => {
+const form = document.querySelector("form.addBookDialog");
+form.addEventListener("submit", (e) => {
     e.preventDefault();
     const bookTitle = document.querySelector('#title').value;
     const bookAuthor = document.querySelector('#author').value;
@@ -109,18 +107,11 @@ confirmBtn.addEventListener("click", (e) => {
     let newBook = new Book(bookTitle, bookAuthor, bookPages, bookRead, bookRate);
     addBookToLibrary(newBook);
 
-    document.querySelector('#title').value = '';
-    document.querySelector('#author').value = '';
-    document.querySelector('#pages').value = '';
-    document.querySelector('#readStatus').value = '';
-    document.querySelector('#rate').value = '';
-
+    form.reset();
     addBookDialog.close();
     displayBooks();
 });
 
-addBookDialog.addEventListener("close", () => {
-    displayBooks();
-});
-
 displayBooks();
+
+

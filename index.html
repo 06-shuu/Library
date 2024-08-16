@@ -16,18 +16,18 @@
         <p>Your reading journey starts here</p>
         <p>catalog your books, plan your next read, and uncover hidden gems.</p>
         <dialog class="addBookDialog">
-            <form action="">
+            <form class="addBookDialog" action=""  method="dialog">
                 <div class="input">
                     <label for="title">Title:</label>
-                    <input type="text" name="bookTitle" id="title">
+                    <input required type="text" name="bookTitle" id="title">
                 </div>
                 <div class="input">
                     <label for="author">Author:</label>
-                    <input type="text" name="bookAuthor" id="author">
+                    <input required type="text" name="bookAuthor" id="author">
                 </div>
                 <div class="input">
                     <label for="pages">No. of pages</label>
-                    <input type="number" name="bookPages" id="pages">
+                    <input required type="number" name="bookPages" id="pages">
                 </div>
                 <div class="multipleSelection">
                     <label for="readStatus">Read status:</label>
@@ -46,7 +46,7 @@
                     </select>
                 </div>
                 <div class="btns">
-                    <button value="default" id="confirmBtn">Confirm</button>
+                    <button  type="submit" id="confirmBtn">Confirm</button>
                     <button value="cancel" formmethod="dialog">Cancel</button>
                 </div>
             </form>
