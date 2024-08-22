@@ -20,7 +20,6 @@ body {
 
 .header {
     padding: 30px 30px 10px 30px;
-
     dialog {
         width: 100%;
         max-width: 500px;
@@ -95,7 +94,7 @@ body {
 .showBooks {
     padding: 10px 30px 30px 30px;
     display: grid;
-    grid-template-columns: repeat(5, minmax(1rem, 1fr));
+    // grid-template-columns: repeat(5, minmax(1rem, 1fr));
     gap: 1rem;
 
     .book-card {
@@ -168,4 +167,10 @@ footer{
     background-color: #fffcf5;
     width: 100%;
     text-align: center;    
+}
+
+@media screen and (min-width:60rem){
+    .showBooks {
+        grid-template-columns: repeat(5, minmax(1rem, 1fr));
+    }
 }
