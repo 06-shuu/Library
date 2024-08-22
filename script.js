@@ -112,6 +112,11 @@ form.addEventListener("submit", (e) => {
     displayBooks();
 });
 
+document.getElementById('cancelBtn').addEventListener('click', () => {
+    form.reset(); 
+    addBookDialog.close();
+});
+
 displayBooks();
 
 
