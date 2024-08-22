@@ -12,6 +12,6 @@
 ~ FOR DESKTOP VIEW ONLY ~
 
 **To-dos:**
-- [ ] add media query
+- [x] add media query
 - [ ] add storage
 
